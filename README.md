@@ -3,6 +3,8 @@
 # CreditGuard: Desbravando as Fronteiras da Avaliação de Crédito#
 
 # Importar bibliotecas necessárias
+
+```python
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_text, plot_tree
 from sklearn.metrics import confusion_matrix, accuracy_score
@@ -82,3 +84,4 @@ print(f'Proporção de proponentes classificados como "maus": {proporcao_maus:.4
 # 10. Calcular a acurácia se todos os contratos fossem classificados como "bons"
 acuracia_todos_bons = accuracy_score(y_val, np.zeros_like(y_val))
 print(f'Acurácia se todos os contratos fossem classificados como "bons": {acuracia_todos_bons:.4f}')
+```
